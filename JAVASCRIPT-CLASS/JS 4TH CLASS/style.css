@@ -1,0 +1,57 @@
+body {
+    background-color: navy;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quizContainer {
+    border: 1px solid black;
+    width: 35%;
+    background-image: linear-gradient(rgb(78, 78, 238), rgb(87, 4, 87));
+    margin: 0 30%;
+}
+
+.quizHeader {
+    /* border:1px solid pink; */
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    background-image: linear-gradient(rgb(78, 78, 238), rgb(87, 4, 87));
+    padding: 8px;
+    /* border:1px solid red; */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    /* border:1px solid red; */
+}
+
+li {
+    list-style-type: none;
+    padding: 5px 14px;
+    /* border-bottom: 1px solid gray; */
+}
+
+.submitBtn {
+    padding: 5px 25px;
+    text-align: center;
+    margin: 5px 0px;
+    background-image: linear-gradient(navy, green);
+    color: white;
+    margin-left: 35%;
+    font-size: 15px;
+}
+
+label {
+    color: white;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}

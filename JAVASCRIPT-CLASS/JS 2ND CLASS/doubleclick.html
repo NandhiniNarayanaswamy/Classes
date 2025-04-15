@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double click</title>
+</head>
+
+<body>
+    <button ondblclick="test()">Print message</button>
+    <button onclick="counterclick()">counter</button>
+    <div id="para"></div>
+    <script>
+        function test() {
+            console.log("double click clicked");
+            let para1 = document.getElementById("para") //here it creates only once, because it is already created by div tag
+            para1.innerHTML = "you recived an amazing offer from our side"
+            document.body.append(para1)
+
+            // let para = document.createElement('p') //if you click each time it executes, because para tag is creating each time we click the button
+            // para.innerHTML = "you recived an amazing offer from our side"
+            // document.body.append(para)
+
+        }
+        let count = 0
+        function counterclick() {
+            count++;
+            console.log(count);
+            let para1 = document.getElementById("para") //here it creates only once, because it is already created by div tag
+            para1.innerHTML = count
+            document.body.append(para1)
+
+        }
+    </script>
+</body>
+
+</html>

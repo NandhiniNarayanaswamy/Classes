@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--which meta tag is used to for responsiveness(interview question)-->
+    <title>CRUD OPERATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sample Application</h1>
+        <!----Form to add the new post-->
+        <div class="form">
+            <input type="text" id="titleInput" placeholder="Enter post title">
+            <textarea id="bodyInput" placeholder="Enter the brief about the post"></textarea>
+            <button onclick="addPost()">Add Post</button>
+        </div>
+        <!---container to display the posts-->
+        <div id="postContainer"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

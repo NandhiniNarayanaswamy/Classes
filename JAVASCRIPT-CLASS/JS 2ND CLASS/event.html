@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+
+<body>
+    <!--with HTML AND JS-->
+    <button onclick="clickme()">Click</button> <!--onclick ON starts only with html file-->
+    <button id="idclick">ClickID</button>
+    <script>
+        function clickme() {
+            console.log(event); //its a pointer event || event is a object
+
+        }
+        let idclic = document.getElementById("idclick") //
+        console.log(idclic);
+        idclic.addEventListener("click", function () //event & anonymous function || arrow function
+        {
+            alert("you have clicked")
+
+        })
+        //PURLY WITH JS
+        let btn = document.createElement('button') //created a buttton 
+        console.log(btn);
+        btn.innerHTML = "click|PURE|JS"
+        document.body.append(btn)
+        //-----------------button created------------//
+        btn.addEventListener("click", () => console.log("good"));
+
+
+    </script>
+</body>
+
+</html>

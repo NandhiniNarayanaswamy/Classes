@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Table</title>
+</head>
+
+<body>
+    <script>
+        let creatingtable = document.createElement('table')
+        console.log(creatingtable);
+        creatingtable.style.border = "2px solid black"
+        creatingtable.style.borderCollapse = "collapse"
+
+
+        let creatingthead = document.createElement('thead')
+        console.log(creatingthead);
+        creatingthead.style.border = "2px solid black"
+        let creatingtablerow = document.createElement('tr')
+        console.log(creatingtablerow);
+        let creatingtablehead1 = document.createElement('th')
+        console.log(creatingtablehead1);
+        creatingtablehead1.innerHTML = "Name"
+        let creatingtablehead2 = document.createElement('th')
+        console.log(creatingtablehead2);
+        creatingtablehead2.innerHTML = "Age"
+        let creatingtablehead3 = document.createElement('th')
+        console.log(creatingtablehead3);
+        creatingtablehead3.innerHTML = "City"
+        document.body.append(creatingtable)
+        creatingtable.append(creatingthead)
+        creatingthead.append(creatingtablerow)
+        creatingtablerow.append(creatingtablehead1, creatingtablehead2, creatingtablehead3)
+
+        let tablebody = document.createElement('tbody')
+        tablebody.style.border = "2px solid black"
+        let tablerow = document.createElement('tr')
+        let tablehead1 = document.createElement('th')
+        tablehead1.innerText = "Ramya"
+        let tablehead2 = document.createElement('th')
+        tablehead2.innerText = "56"
+        let tablehead3 = document.createElement('th')
+        tablehead3.innerText = "Hosur"
+        creatingtable.append(tablebody)
+        tablebody.append(tablerow)
+        tablerow.append(tablehead1, tablehead2, tablehead3)
+
+        let tablerow2 = document.createElement('tr')
+        let tablehead11 = document.createElement('th')
+        tablehead11.innerText = "Nandhini"
+        let tablehead21 = document.createElement('th')
+        tablehead21.innerText = "36"
+        let tablehead31 = document.createElement('th')
+        tablehead31.innerText = "Madurai"
+
+        tablebody.append(tablerow2)
+        tablerow2.append(tablehead11, tablehead21, tablehead31)
+
+        let tablerow3 = document.createElement('tr')
+        let tablehead12 = document.createElement('th')
+        tablehead12.innerText = "sowmya"
+        let tablehead22 = document.createElement('th')
+        tablehead22.innerText = "16"
+        let tablehead32 = document.createElement('th')
+        tablehead32.innerText = "Madurai"
+
+        tablebody.append(tablerow3)
+        tablerow3.append(tablehead12, tablehead22, tablehead32)
+
+    </script>
+</body>
+
+</html>

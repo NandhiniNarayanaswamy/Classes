@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+
+<body>
+    <input type="text" id="num1" value="" placeholder="ENTER 1st number" onkeypress="test()">
+    <p></p>
+    <input type="text" id="num2" value="" placeholder="ENTER 2nd number" onkeypress="test()">
+    <p>PRESS ENTER TO CALCULATE</p>
+    <h2>Result:<span id="result"></span></h2>
+    <script>
+
+        function test() {
+            //console.log("number entered"); //to check whether onkeypress is working
+            console.log(event.key);
+            // console.log(typeof (event.key)); //type of entered element
+            if (event.key == "Enter") {
+                let num1val = document.getElementById('num1')
+                console.log(num1val.value);
+                let floatnum = parseFloat(num1val.value) || 0
+
+                let num2val = document.getElementById('num2')
+                let floatnum1 = parseFloat(num2val.value) || 0
+                console.log(num2val.value);
+                let result = document.getElementById('result')
+                result.innerText = floatnum + floatnum1
+                console.log(floatnum + floatnum1);
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>

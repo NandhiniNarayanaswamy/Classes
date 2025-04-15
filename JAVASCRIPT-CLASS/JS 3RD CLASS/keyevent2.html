@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title" tabindex="0">hello people</h1> <!--when it is focused it is event is printing-->
+    <input type="text" placeholder="type here" onkeydown="test()">
+    <script>
+        let heading = document.getElementById('title')
+        heading.addEventListener('keyup', (event) => {
+            console.log(event);
+
+        })
+        function test() {
+            console.log(event);
+            let para = document.createElement('p')
+            para.innerHTML = event.key //it comes inside the para tag like this <p>event.key</p>
+            document.body.append(para)
+
+        }
+    </script>
+</body>
+
+</html>

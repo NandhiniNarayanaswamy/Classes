@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        keyevent
+    </title>
+</head>
+
+<body>
+    <script>
+        document.addEventListener('keydown', (event) => { //works same as keypress
+            console.log(event);
+            console.log(event.code, event.key); //stored in keyevent object so we can access
+
+        })
+        document.addEventListener('keypress', (event) => {
+            console.log(event);
+            console.log(event.code, event.key); //stored in keyevent object so we can access
+
+        })
+        document.addEventListener('keyup', (event) => { //long press >> release the key it will be printed
+            //it is in JS thay only keyup if it is in html it vl be Onkeyup
+            console.log(event);
+            console.log(event.code, event.key); //stored in keyevent object so we can access
+
+        })
+    </script>
+</body>
+
+</html>

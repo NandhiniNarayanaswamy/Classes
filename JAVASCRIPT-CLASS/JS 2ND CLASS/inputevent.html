@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputevent</title>
+</head>
+
+<body>
+    <label for="">Oninput</label>
+    <input type="text" value="" id=" " oninput="test()">
+
+    <br>
+    <label for="">Onblur</label>
+    <input type="text" value="" id=" " onblur="test()">
+    <!--when you come out of the box each time u cilck outside it prints on the console screen-->
+    <br>
+    <label for="">Onfocus</label>
+    <input type="text" value="" id=" "
+        onfocus="test()"><!--when you come out of the box each time u cilck inside it prints on the console screen-->
+    <br>
+    <label for="">Onchange</label>
+    <input type="text" value="" id=" " onchange="test()">
+    <!--when you come out of the box only one time not like blur time u cilck outside it prints on the console screen-->
+    <script>
+        function test() {
+            console.log(event.target.value);
+
+        }
+    </script>
+</body>
+
+</html>
