@@ -1,13 +1,14 @@
-import Header from "./components/Header"
-import Footer from "../components/Footer"
-import Main from "./components/Main"
 function App() {
+    const obj = {
+        name: "nandhu",
+        age: 12,
+        city: "hosur",
+    }
     return (
         <>
-            <Header />
-            <Main />
-            <Footer />
+            {obj}
         </>
+
     )
 }
 export default App

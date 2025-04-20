@@ -7,8 +7,8 @@ function App() {
     const person1 = { ...person, name: "laksh" }
     return (
         <>
-            {JSON.stringify(person1)}
+            {JSON.stringify(person1)} //React doesn't know how to display an object directly.This converts the object into a string, And React is totally fine rendering strings, so it works.
         </>
     )
 }
-export default App
+export default App;
